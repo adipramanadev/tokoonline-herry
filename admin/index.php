@@ -93,6 +93,15 @@ if(!isset($_SESSION['admin'])){
 						elseif($_GET["halaman"] == "kategori"){
 							include 'kategori.php';
 						}
+						elseif($_GET["halaman"] == "tambahkategori"){
+							include 'tambahkategori.php';
+						}
+						elseif($_GET["halaman"] == "editkategori"){
+							include 'editkategori.php';
+						}
+						elseif($_GET["halaman"] == "hapuskategori"){
+							include 'hapuskategori.php';
+						}
 						elseif($_GET["halaman"] == "pembelian"){
 							include 'pembelian.php';
 						}
