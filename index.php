@@ -49,6 +49,12 @@ include 'koneksi.php';
       </div>
     </div>
   </section>
+  <!-- Tombol Chat WhatsApp -->
+  <a href="https://wa.me/6281381820076" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; 
+          padding: 10px 15px; border-radius: 50px; text-decoration: none; font-weight: bold; 
+          box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 999;">
+    Chat Admin Kami
+  </a>
 
 </body>
 
