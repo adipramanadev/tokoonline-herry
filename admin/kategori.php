@@ -1,4 +1,5 @@
 <?php
+include '../koneksi.php';
 $semuadata = [];
 $ambil = $koneksi->query("SELECT * FROM kategori");
 while($tiap = $ambil->fetch_assoc()){
@@ -29,15 +30,15 @@ while($tiap = $ambil->fetch_assoc()){
       <td><?= $key+1; ?>.</td>
       <td><?= $value['nama_kategori']; ?></td>
       <td>
-        <a href="" class="btn btn-warning btn-xs">Ubah</a>
-        <a href="" class="btn btn-danger btn-xs">Hapus</a>
+        <a href="index.php?halaman=editkategori&id=<?= $value['id_kategori']; ?>" class="btn btn-warning btn-xs">Ubah</a>
+        <a href="index.php?halaman=hapuskategori&id=<?= $value['id_kategori']; ?>" class="btn btn-danger btn-xs">Hapus</a>
       </td>
     </tr>
     <?php endforeach; ?>
   </tbody>
 </table>
 
-<a href="" class="btn btn-primary">Tambah Data</a>
+<a href="index.php?halaman=tambahkategori" class="btn btn-primary">Tambah Data</a>
 
 
 
